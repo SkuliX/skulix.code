@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
+
+
+
+body{
+    font-family: 'Source Code Pro', monospace;
+    background-color: #2e323b;
+}
+
+.textbox{
+    color: azure;
+    text-align: center;
+    padding-top: 350px;
+    font-size: 25px;
+}
+.animated{
+    display: inline-block;
+    height: 32px;
+    overflow: hidden;
+}
+.animated span{
+    display: block;
+    position: relative;
+    text-align: left;
+}
+.animated span:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    border-left: 2px solid azure;
+    right: -2px;
+    background-color: #2e323b;
+    animation: 4s textType infinite;
+    animation-fill-mode: backwards;
+}
+@keyframes textType{
+    0%{
+        left: 0;
+    }
+    50%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+@keyframes wordchange{
+    0%{
+        margin-top: 0;
+    }
+    33.333%{
+        margin-top: 32;
+    }
+    66.666%{
+        margin-top: 64;
+    }
+    100%{
+        margin-top: 96;
+    }
+}
+li, a{
+    color: azure;
+    text-decoration: none;
+    display: inline-block;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin-top: 25px;
+}
+li, a{
+    transition: all 0.3s ease 0s;
+}
+li, a:hover{
+    color: #9b84e3;
+}
+.about{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 18px;
+}
+.myinfo {
+    color: azure;
+    margin-top: 10px;
+    margin-left: 855px;
+    padding: 0 2px;
+}
+.discord{
+    color: azure;
+    margin-left: 900px;
+    font-size: 15px;
+    opacity: 50%;
+}
